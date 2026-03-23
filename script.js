@@ -11,15 +11,23 @@ function openGallery(type) {
                 <a href="flowerShop/flower.pdf" target="_blank" style="display:inline-block; padding:15px 30px; background:#1a1a1a; color:white; text-decoration:none;">צפייה בתיק מוצר מלא (PDF)</a>
             </div>`;
         for(let i=1; i<=3; i++) imagesDiv.innerHTML += `<img src="flowerShop/p${i}.png" alt="flower ${i}">`;
+    } else if(type === 'kinder') {
+        title.innerText = 'מוסדות חינוך';
+        imagesDiv.innerHTML += `
+            <div style="grid-column: 1 / -1; text-align: center; margin-bottom: 30px;">
+                <a href="kindergarten/kinder.pdf" target="_blank" style="display:inline-block; padding:15px 30px; background:#1a1a1a; color:white; text-decoration:none;">צפייה בתיק מוצר מלא (PDF)</a>
+            </div>`;
+        for(let i=1; i<=3; i++) imagesDiv.innerHTML += `<img src="kindergarten/p${i}.png" alt="kinder ${i}">`;
     } else if(type === 'kitchen') {
         title.innerText = 'מטבחים וחללי פנים';
+        imagesDiv.innerHTML += `
+            <div style="grid-column: 1 / -1; text-align: center; margin-bottom: 30px;">
+                <a href="kitchen/kit.pdf" target="_blank" style="display:inline-block; padding:15px 30px; background:#1a1a1a; color:white; text-decoration:none;">צפייה בתיק מוצר מלא (PDF)</a>
+            </div>`;
         for(let i=1; i<=15; i++) imagesDiv.innerHTML += `<img src="kitchen/p (${i}).png" alt="kitchen ${i}">`;
     } else if(type === 'final') {
         title.innerText = 'פרויקט גמר | פנימייה';
         for(let i=1; i<=5; i++) imagesDiv.innerHTML += `<img src="FinalProject/p (${i}).png" alt="final ${i}">`;
-    } else if(type === 'kinder') {
-        title.innerText = 'מוסדות חינוך';
-        for(let i=1; i<=3; i++) imagesDiv.innerHTML += `<img src="kindergarten/p${i}.png" alt="kinder ${i}">`;
     } else if(type === 'office') {
         title.innerText = 'בניין משרדים';
         for(let i=1; i<=4; i++) imagesDiv.innerHTML += `<img src="officeBuilding/p${i}.png" alt="office ${i}">`;

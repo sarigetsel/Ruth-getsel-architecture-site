@@ -20,7 +20,7 @@ body {
     cursor: url("https://img.icons8.com/material-outlined/24/000000/home--v1.png") 12 12, auto;
 }
 
-a, button, .project-card, .pdf-link, .close-gallery {
+a, button, .project-card, .pdf-link, .close-gallery, .resume-circle {
     cursor: url("https://img.icons8.com/material-outlined/24/000000/home--v1.png") 12 12, pointer !important;
 }
 
